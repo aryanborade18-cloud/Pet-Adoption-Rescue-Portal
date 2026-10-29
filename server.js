@@ -12,7 +12,7 @@ const fs = require("fs");
 const crypto = require("crypto");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -25,7 +25,7 @@ app.use(session({
     cookie: {
         httpOnly: true,
         sameSite: "lax",
-        secure: false,
+        secure: process.env.NODE_ENV === "production",
         maxAge: 60 * 60 * 1000
     }
 }));
@@ -471,12 +471,12 @@ app.get("/api/admin/contacts", requireAdmin, async (req, res) => {
 });
 
 // Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/pet_adoption")
+mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/pet_adoption")
     .then(() => {
         console.log("MongoDB Connected Successfully!");
 
-        app.listen(PORT, "127.0.0.1", () => {
-            console.log(`Server running at http://localhost:${PORT}`);
+        app.listen(PORT, "0.0.0.0", () => {
+            console.log(`Server running on port ${PORT}`);
         });
     })
     .catch(error => {
