@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption & Rescue Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">🐾 Pet Rescue</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#adopt">Adopt Pets</a>
+        <a href="#rescue">Rescue</a>
+        <a href="#about">About Us</a>
+        
+<a href="admin-login.html">Admin Login</a>
+
+    </div>
+</nav>
+    <h1>Welcome to Pet Adoption & Rescue Portal 🐾</h1>
+    <p>Find a loving home for every pet.</p>
+    
+<button onclick="document.getElementById('adopt').scrollIntoView({behavior: 'smooth'})">
+    Adopt a Pet
+</button>
+
+   <section id="adopt">
+    <h2>Pets Available for Adoption</h2>
+
+    <div class="pet-container">
+        <div class="pet-card">
+            <img src="images/bruno.jpg" alt="Bruno">
+            <h3>🐶 Bruno</h3>
+            <p>Dog | Age: 2 years</p>
+            
+<button onclick="choosePet('Bruno')">Adopt Me</button>
+
+        </div>
+
+        <div class="pet-card">
+            <img src="images/simba.jpg" alt="simba">
+            <h3>🐱 simba</h3>
+            <p>Cat | Age: 1 year</p>
+            
+<button onclick="choosePet('Simba')">Adopt Me</button>
+
+        </div>
+    </div>
+</section>
+
+<section id="application">
+    <h2>Pet Adoption Application 🐾</h2>
+    <p>Fill out the form to apply for adoption.</p>
+<form id="adoption-form">
+
+    <input type="text"
+           name="fullName"
+           placeholder="Full Name"
+           required>
+
+    <input type="email"
+           name="email"
+           placeholder="Email Address"
+           required>
+
+    <input type="tel"
+           name="phone"
+           placeholder="Phone Number"
+           required>
+
+    <select name="petName" required>
+        <option value="">Select a Pet</option>
+        <option value="Bruno">Bruno - Dog</option>
+        <option value="Simba">Simba - Cat</option>
+    </select>
+
+    <textarea name="reason"
+              placeholder="Why do you want to adopt?"
+              required></textarea>
+
+    <button type="submit">
+        Submit Application
+    </button>
+
+</form>
+</section>
+
+<section id="rescue">
+    <h2>🚑 Report an Animal Rescue</h2>
+    <p>Help us identify animals that need assistance.</p>
+
+    <form id="rescue-form">
+
+        <input type="text"
+               name="reporterName"
+               placeholder="Your Full Name"
+               required>
+
+        <input type="tel"
+               name="phone"
+               placeholder="Contact Number"
+               required>
+
+        <select name="animalType" required>
+            <option value="">Select Animal Type</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Other">Other Animal</option>
+        </select>
+
+        <input type="text"
+               name="location"
+               placeholder="Location of Animal"
+               required>
+
+        <select name="condition" required>
+            <option value="">Animal Condition</option>
+            <option value="Injured">Injured</option>
+            <option value="Abandoned">Abandoned</option>
+            <option value="Sick">Sick</option>
+            <option value="Trapped">Trapped</option>
+        </select>
+
+        <textarea name="description"
+                  placeholder="Describe the rescue situation"
+                  required></textarea>
+                  
+<label for="animalPhoto">Upload Animal Photo 📸</label>
+
+<input type="file"
+       id="animalPhoto"
+       name="animalPhoto"
+       accept="image/jpeg,image/png,image/webp">
+
+
+        <button type="submit">
+            Submit Rescue Report
+        </button>
+
+    </form>
+</section>
+
+<!-- Rescue Status Tracking -->
+
+<section id="tracking">
+    <h2>🐾 Track Your Rescue Status</h2>
+
+    <p>Enter your Rescue ID to check the status.</p>
+
+    <div class="tracking-box">
+        <input type="text"
+               id="rescueId"
+               placeholder="Enter Rescue ID">
+
+        <button type="button" id="trackButton">
+            Track Rescue
+        </button>
+
+        <p id="trackingResult"></p>
+    </div>
+</section>
+
+<section id="about">
+    <h2>🐾 About Us</h2>
+
+    <p>
+        Welcome to our Pet Adoption & Rescue Portal!
+    </p>
+
+    <p>
+        Our mission is to help abandoned, injured,
+        and homeless animals find loving homes
+        and receive the care they deserve.
+    </p>
+
+    <p>
+        Through our platform, users can adopt pets,
+        report animals in need of rescue, and
+        track the progress of rescue requests.
+    </p>
+
+    <p>
+        Together, we can create a safer and
+        happier world for animals. ❤️
+    </p>
+</section>
+
+<!-- Contact Us Section -->
+
+<section id="contact">
+    <h2>📞 Contact Us</h2>
+
+    <p>
+        Have questions about pet adoption or animal rescue?
+        We'd love to hear from you!
+    </p>
+
+    <form id="contact-form">
+
+        <input type="text"
+               name="name"
+               placeholder="Your Full Name"
+               required>
+
+        <input type="email"
+               name="email"
+               placeholder="Your Email Address"
+               required>
+
+        <input type="text"
+               name="subject"
+               placeholder="Subject"
+               required>
+
+        <textarea name="message"
+                  placeholder="Write your message here..."
+                  required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <p class="contact-note">
+        This is a college project demonstration,
+        not an emergency rescue helpline.
+    </p>
+</section>
+
+<!-- Website Footer -->
+
+<footer id="footer">
+
+    <h3>🐾 Pet Adoption & Rescue Portal</h3>
+
+    <p>
+        Giving every animal a chance for a loving home.
+    </p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#adopt">Adopt Pets</a>
+        <a href="#rescue">Rescue</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <p>
+        © 2026 Pet Adoption & Rescue Portal.
+        All Rights Reserved.
+    </p>
+
+    <p>
+        Developed as a College Major Project.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

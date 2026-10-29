@@ -1,0 +1,532 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5fbf7;
+    text-align: center;
+}
+
+h1 {
+    color: #26734d;
+    font-size: 38px;
+    margin-top: 110px;
+}
+
+p {
+    color: #555;
+    font-size: 20px;
+}
+
+button {
+    background-color: #26734d;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #195c3c;
+}
+.navbar {
+    background-color: #26734d;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+#adopt {
+    padding: 50px 20px;
+}
+
+.pet-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.pet-card {
+    background: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pet-card h3 {
+    color: #26734d;
+}
+
+
+.pet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+}
+
+/* Adoption Form Styling */
+
+#application {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#adoption-form {
+    background-color: white;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#adoption-form input,
+#adoption-form select,
+#adoption-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#adoption-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#adoption-form button {
+    width: 100%;
+}
+
+/* Animal Rescue Form Styling */
+
+#rescue {
+    padding: 50px 20px;
+    background-color: #eaf5ee;
+    text-align: center;
+}
+
+#rescue h2 {
+    color: #26734d;
+    font-size: 30px;
+}
+
+#rescue-form {
+    background-color: white;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#rescue-form input,
+#rescue-form select,
+#rescue-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#rescue-form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+#rescue-form button {
+    width: 100%;
+}
+
+/* Rescue Status Tracking */
+
+#tracking {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f5fbf7;
+}
+
+#tracking h2 {
+    color: #26734d;
+}
+
+.tracking-box {
+    background: white;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.tracking-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.tracking-box button {
+    width: 100%;
+}
+
+#trackingResult {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Admin Login Styling */
+
+#admin-login {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#admin-login h2 {
+    color: #26734d;
+    margin-top: 0;
+}
+
+#admin-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+#admin-login-form input {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#admin-login-form button {
+    width: 100%;
+}
+
+#admin-login a {
+    color: #26734d;
+    text-decoration: none;
+}
+
+/* Admin Dashboard */
+
+#admin-dashboard {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: left;
+}
+
+#admin-dashboard h1,
+#admin-dashboard h2 {
+    color: #26734d;
+}
+
+#admin-dashboard #logoutButton {
+    margin-bottom: 30px;
+}
+
+#adoption-list,
+#rescue-list,
+#contact-list {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow-x: auto;
+}
+
+/* Admin Dashboard Tables */
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.admin-table th {
+    background-color: #26734d;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+.admin-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-table tr:hover {
+    background-color: #f1f8f3;
+}
+
+/* About Us Section */
+
+#about {
+    background-color: #eaf5ee;
+    padding: 60px 25px;
+    text-align: center;
+}
+
+#about h2 {
+    color: #26734d;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#about p {
+    color: #444;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 15px auto;
+}
+
+#about p:first-of-type {
+    font-weight: bold;
+    color: #26734d;
+    font-size: 21px;
+}
+
+/* Contact Us Section */
+
+#contact {
+    padding: 60px 20px;
+    background-color: #f5fbf7;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #26734d;
+    font-size: 32px;
+}
+
+#contact-form {
+    background-color: white;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact-form button {
+    width: 100%;
+}
+
+.contact-note {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Admin Contact Messages Table */
+
+#contact-list {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+#contact-list table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+#contact-list th,
+#contact-list td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+
+#contact-list th {
+    background-color: #26734d;
+    color: white;
+}
+
+#contact-list tr:nth-child(even) {
+    background-color: #f1f8f3;
+}
+
+#contact-list td:nth-child(4) {
+    min-width: 220px;
+}
+
+/* Website Footer Design */
+
+#footer {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 25px;
+    margin-top: 0;
+}
+
+#footer h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+#footer p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #e0f2e9;
+    margin: 12px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #95d5b2;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    #footer {
+        padding: 30px 15px;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+}
+
+/* Final Website Finishing Touches */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Comfortable spacing when navigating */
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* Smooth button effects */
+button {
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Better form focus effect */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #40916c;
+    outline-offset: 2px;
+}
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    button {
+        transition: none;
+    }
+}
+
