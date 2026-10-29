@@ -30,14 +30,9 @@ The Pet Adoption & Rescue Portal is a web-based application developed to help ho
 6. Admin login and dashboard.
 7. Rescue status management.
 
-## How to Run the Project
+## Live Website Link:
 
-1. Download or clone the repository.
-2. Open the project folder in VS Code.
-3. Install dependencies using `npm install`.
-4. Configure the required MongoDB connection and environment variables locally.
-5. Start the server using `node server.js`.
-6. Open `http://localhost:3000` in your browser.
+https://pet-adoption-rescue-portal-nu6f.onrender.com
 
 ## Conclusion
 
